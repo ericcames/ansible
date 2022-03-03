@@ -5,5 +5,5 @@
   - name: Ensure NTP (for time synchronization) is installed.
     yum: name=ntp state=present
 
-  - name: Ensure NTP is running.
-    service: name=ntp state=started enabled=yes
+  - name: Ensure NTPD is running.
+    service: name=ntpd state=started enabled=yes
